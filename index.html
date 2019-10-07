@@ -10,9 +10,39 @@
 </head>
 <body>
 <div class="container">
+        <div class="jumbotron jumbotron-fluid myJumbo">
+                <div class="container myJumbo">
+                  <h1 class="display-4">New York Times Search</h1>
+                  <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+                </div>
+              </div>
+              <form>
+                  <fieldset>
+                    <legend>Search Parameters</legend>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Search Term</label>
+                      <input type="text" class="form-control" id="search-term" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Number of Records to Retrieve:
+                      </label>
+                      <input type="text" class="form-control" id="record-number" placeholder="Another input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Start Year (Optional)</label>
+                        <input type="text" class="form-control" id="start-year" placeholder="Another input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">End Year (Optional)</label>
+                        <input type="text" class="form-control" id="end-year" placeholder="Another input">
+                    </div>
+                    <div class="form-group">
+                            <input id="find-movie" type="submit" value="Search">
+                            <input id="find-movie" type="submit" value="Clear Result">
+                    </div>
+                    </fieldset>
+                  </form>
     
-</div>
-
-    
+</div>  
 </body>
 </html>
