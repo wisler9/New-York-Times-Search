@@ -2,10 +2,11 @@
     text-align: center;
     background-color: #020257;
     color: #fff;
+    font-weight: bold;
 }
 
 legend {
-    background-color: rgb(215, 215, 215);
+    /* background-color: rgb(215, 215, 215); */
     color: #000;
     padding: 3px 6px;
 }
@@ -17,3 +18,7 @@ legend {
 input {
     margin: .4rem;
 }
+
+
+
+

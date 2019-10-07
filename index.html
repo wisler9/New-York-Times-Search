@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="bootswatch.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
+   </head>
 <body>
 <div class="container">
         <div class="jumbotron jumbotron-fluid myJumbo">
@@ -17,36 +17,46 @@
                   <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
                 </div>
               </div>
-              <form id="form">
-                  <fieldset>
-                    <legend>Search Parameters</legend>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Search Term</label>
-                      <input type="text" class="form-control" id="search-term" placeholder="Example input">
-                    </div>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput2">Number of Records to Retrieve:
-                      </label>
-                      <input type="text" class="form-control" id="record-number" placeholder="Another input">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Start Year (Optional)</label>
-                        <input type="text" class="form-control" id="start-year" placeholder="Another input">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">End Year (Optional)</label>
-                        <input type="text" class="form-control" id="end-year" placeholder="Another input">
-                    </div>
-                    <div class="form-group">
-                            <input id="find-movie" type="submit" value="Search">
-                            <input id="find-movie" type="submit" value="Clear Result">
-                    </div>
-                    </fieldset>
-                  </form>
+              <!-- <div class="panel panel-info"> -->
+
+
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                              <h3 class="panel-title">Search Parameters</h3>
+                            </div>
+                            <div class="panel-body">
+                                    <form id="form" class="panel-heading">
+                                            
+                                              <div class="form-group">
+                                                <label for="formGroupExampleInput">Search Term</label>
+                                                <input type="text" class="form-control" id="search-term" placeholder="Example input">
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="formGroupExampleInput2">Number of Records to Retrieve:
+                                                </label>
+                                                <input type="dropdown" class="form-control" id="record-number" placeholder="Another input">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="formGroupExampleInput2">Start Year (Optional)</label>
+                                                  <input type="text" class="form-control" id="start-year" placeholder="Another input">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="formGroupExampleInput2">End Year (Optional)</label>
+                                                  <input type="text" class="form-control" id="end-year" placeholder="Another input">
+                                              </div>
+                                              <div class="form-group">
+                                                      <input id="find-movie" type="submit" value="Search" class="btn btn-info">
+                                                      <input id="find-movie" type="submit" value="Clear Result" class="btn btn-info">
+                                              </div>
+                                            
+                                            </form>
+                            </div>
+                          </div>
+    
+
 
     
-</div>
-
 
 <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
