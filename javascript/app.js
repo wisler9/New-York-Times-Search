@@ -1,21 +1,27 @@
-var searchTerm="glocations:('NEW YORK CITY')";
-var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+searchTerm+"&api-key=Hig5M7FblcRTt7RMpTao9B4NGYPoxXyV";
-var jsonFile = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=&api-key=Hig5M7FblcRTt7RMpTao9B4NGYPoxXyV"
-var searchTerm;
-console.log("Javascript works");
+var searchTerm="keywords=";
+
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=&api-key=Hig5M7FblcRTt7RMpTao9B4NGYPoxXyV";
+// var jsonFile = "https://api.nytimes.com/svc/search/v2/articlesearch.json"
+
+
 
 
 $.ajax({
     url: queryURL,
     method: "GET"
-}).then(function(response){
-console.log(response)
+}).then(function(res){
+console.log(res);
+
+// This testSnippet allows you to get into the keywords section that is assigned to the variable searchTerm.
+var testSnippet = res.response.docs[0];
+console.log(testSnippet);
+
+
 })
 
-searchTerm = ("<div>")
-searchTerm.attr("")
 
-$("#search-term").
+
+
 
 
 
