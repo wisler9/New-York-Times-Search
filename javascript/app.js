@@ -1,4 +1,7 @@
 
+console.log("Javascript works");
+
+
 var queryURL = "";
 
 
