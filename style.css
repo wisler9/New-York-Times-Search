@@ -1,0 +1,19 @@
+.myJumbo {
+    text-align: center;
+    background-color: #020257;
+    color: #fff;
+}
+
+legend {
+    background-color: rgb(215, 215, 215);
+    color: #000;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
